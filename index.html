@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewCraft | Artisanal Coffee Beans</title>
+    <!-- Tailwind CSS CDN for instant, beautiful styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#12100E] text-[#F3F4F6] font-sans antialiased selection:bg-amber-700 selection:text-white">
+
+    <!-- Navbar -->
+    <header class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center border-b border-white/10">
+        <div class="text-xl font-bold tracking-wider text-amber-500">BREWCRAFT.</div>
+        <a href="#shop" class="bg-amber-600 hover:bg-amber-500 text-white px-5 py-2.5 rounded-full text-sm font-medium transition duration-200">Shop Beans</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-6 py-20 md:py-32 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+            <span class="inline-block bg-amber-950 text-amber-400 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest mb-4 border border-amber-800/50">Single Origin & Freshly Roasted</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                Elevate Your Morning Routine with <span class="text-amber-500">Artisanal Beans.</span>
+            </h1>
+            <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                Ethically sourced from high-altitude farms, small-batch roasted to perfection, and delivered fresh to your doorstep. Taste the notes of dark chocolate, caramel, and citrus in every cup.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#shop" class="bg-amber-600 hover:bg-amber-500 text-white font-medium px-8 py-4 rounded-xl text-center shadow-lg shadow-amber-600/20 transition duration-200">Explore Collection</a>
+                <a href="#features" class="border border-white/20 hover:bg-white/5 font-medium px-8 py-4 rounded-xl text-center transition duration-200">Learn More</a>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-amber-600 to-amber-800 rounded-3xl blur-xl opacity-30"></div>
+            <div class="relative bg-[#1A1714] border border-white/10 rounded-3xl p-8 shadow-2xl">
+                <div class="bg-amber-900/40 border border-amber-600/30 rounded-2xl h-72 flex items-center justify-center text-amber-300 font-medium">
+                    [ Product Image / Coffee Bag Mockup ]
+                </div>
+                <div class="mt-6 flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-lg">Ethiopian Yirgacheffe</h3>
+                        <p class="text-sm text-gray-400">Light Roast • Floral & Citrus</p>
+                    </div>
+                    <span class="text-amber-400 font-bold text-xl">$18.50</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="max-w-7xl mx-auto px-6 py-20 border-t border-white/10">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold mb-4">Why Coffee Lovers Choose Us</h2>
+            <p class="text-gray-400">We obsess over every step of the process so you can enjoy the cleanest, richest cup possible.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-[#1A1714] border border-white/10 p-8 rounded-2xl">
+                <div class="w-12 h-12 bg-amber-950 text-amber-400 rounded-xl flex items-center justify-center font-bold text-lg mb-6 border border-amber-800/50">01</div>
+                <h3 class="text-xl font-bold mb-3">100% Specialty Grade</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Only top-tier Arabica beans scoring 85+ points make it past our rigorous selection process.</p>
+            </div>
+            <div class="bg-[#1A1714] border border-white/10 p-8 rounded-2xl">
+                <div class="w-12 h-12 bg-amber-950 text-amber-400 rounded-xl flex items-center justify-center font-bold text-lg mb-6 border border-amber-800/50">02</div>
+                <h3 class="text-xl font-bold mb-3">Roasted to Order</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">We never let our beans sit on dusty shelves. Your bag is roasted fresh weekly and shipped immediately.</p>
+            </div>
+            <div class="bg-[#1A1714] border border-white/10 p-8 rounded-2xl">
+                <div class="w-12 h-12 bg-amber-950 text-amber-400 rounded-xl flex items-center justify-center font-bold text-lg mb-6 border border-amber-800/50">03</div>
+                <h3 class="text-xl font-bold mb-3">Direct Trade & Ethical</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">We partner directly with farming co-ops, paying well above fair-trade pricing to support communities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Testimonial -->
+    <section class="max-w-4xl mx-auto px-6 py-16 text-center border-t border-white/10">
+        <blockquote class="text-xl md:text-2xl font-medium text-gray-200 mb-6 leading-relaxed">
+            "Switching to BrewCraft changed my morning coffee entirely. The aroma when you open the bag is unreal, and the flavor profile is remarkably smooth."
+        </blockquote>
+        <p class="text-amber-500 font-semibold">Sarah Jenkins</p>
+        <p class="text-xs text-gray-500 uppercase tracking-wider mt-1">Home Espresso Enthusiast</p>
+    </section>
+
+    <!-- Footer / CTA -->
+    <footer id="shop" class="bg-[#1A1714] border-t border-white/10 py-16 text-center">
+        <div class="max-w-xl mx-auto px-6">
+            <h2 class="text-2xl font-bold mb-4">Get 15% Off Your First Bag</h2>
+            <p class="text-gray-400 text-sm mb-6">Join our newsletter for brewing guides, secret drops, and a discount on your first order.</p>
+            <form class="flex flex-col sm:flex-row gap-3 justify-center">
+                <input type="email" placeholder="Enter your email address" class="bg-[#12100E] border border-white/10 px-4 py-3 rounded-xl text-sm focus:outline-none focus:border-amber-500 text-white w-full sm:w-80">
+                <button type="submit" class="bg-amber-600 hover:bg-amber-500 text-white font-medium px-6 py-3 rounded-xl text-sm transition duration-200">Subscribe</button>
+            </form>
+            <p class="text-xs text-gray-600 mt-8">© 2026 BrewCraft Co. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
