@@ -21,6 +21,27 @@ document.addEventListener("DOMContentLoaded", () => {
             // Success state
             formMessage.style.color = "#10b981"; // Green success color
             formMessage.textContent = "Thank you! Your 15% discount code is on its way.";
+            // Scroll Animation Observer
+document.addEventListener("DOMContentLoaded", () => {
+    const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1 // Triggers when 10% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target); // Stop observing once animated
+            }
+        });
+    }, observerOptions);
+
+    // Select all elements with the animation class
+    const animatedElements = document.querySelectorAll(".animate-on-scroll");
+    animatedElements.forEach(el => observer.observe(el));
+});
             
             // Clear the input field
             emailInput.value = "";
