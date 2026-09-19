@@ -352,6 +352,23 @@ body {
     font-size: 0.875rem;
     font-weight: 500;
 }
+/* --- BUTTON CLICK ANIMATION --- */
+.btn-primary:active, .btn-secondary:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+/* --- SCROLL ANIMATION (Fade-in effect) --- */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .copyright {
     font-size: 0.75rem;
