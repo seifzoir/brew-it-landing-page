@@ -358,6 +358,12 @@ body {
     transition: transform 0.1s ease;
 }
 
+.copyright {
+    font-size: 0.75rem;
+    color: #4b5563;
+    margin-top: 32px;
+}
+
 /* --- SCROLL ANIMATION (Fade-in effect) --- */
 .animate-on-scroll {
     opacity: 0;
@@ -368,10 +374,4 @@ body {
 .animate-on-scroll.is-visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-.copyright {
-    font-size: 0.75rem;
-    color: #4b5563;
-    margin-top: 32px;
 }
