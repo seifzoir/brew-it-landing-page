@@ -364,14 +364,20 @@ body {
     margin-top: 32px;
 }
 
-/* --- SCROLL ANIMATION (Fade-in effect) --- */
+/* Scroll Animation Styles with JS-Enabled Check */
 .animate-on-scroll {
+    opacity: 1; /* Default to visible so it never breaks if JS fails */
+    transform: translateY(0);
+}
+
+/* Only hide and animate if JavaScript successfully activates it */
+body.js-loaded .animate-on-scroll {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-.animate-on-scroll.is-visible {
+body.js-loaded .animate-on-scroll.is-visible {
     opacity: 1;
     transform: translateY(0);
 }
